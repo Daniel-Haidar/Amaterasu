@@ -1,0 +1,152 @@
+@font-face {
+    font-family: HiroMisake;
+    src: url("../fonts/HIROMISAKE.ttf");
+}
+html {
+    overflow-x  : hidden;
+}
+nav {
+    position: relative;
+    display: grid;
+    grid-column: 6;
+    background: linear-gradient(to right, 
+        rgba(0, 0, 0, 1), 
+        rgba(0, 0, 0, 0)), 
+        url("../images/restaurant.jpg");
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: 60%;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    width:100vw;
+    height: fit-content;
+    overflow: hidden;
+    align-items: center;
+    padding-bottom: 6px;
+}
+body {
+    background-color: #000000;
+    background: linear-gradient(to right, 
+        rgba(0, 0, 0, 0.8), 
+        rgba(0, 0, 0, 0.8)), 
+        url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+footer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:5px;
+}
+.layout-li:link, .layout-li:visited {
+    display: flex;
+    transition: all 0.2s ease-in-out;
+    color: white;
+    height: auto;
+    user-select: none;
+    font-size: calc(20px + 1vw);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.layout-li:hover, .layout-li:active {
+    font-size: calc(20px + 2vw);
+    color: red;
+    text-shadow:
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+}
+.filler {
+    display:flex;
+    font-size: calc(20px + 2vw);
+    color: red;
+    text-shadow:
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    width: 0;
+    opacity: 0;
+}
+.logo {
+    left: 0%;
+    margin:auto;
+    font-family: HiroMisake; 
+    color: red;   
+    width:auto;
+    height: fit-content;
+    display: flex;
+    font-size: calc(20px + 4vw);
+    transition: all 0.5s ease-in-out;
+    padding-left: 1vw;
+    justify-content: left;
+    transform: translate(-90%, 0%);
+}
+.logo:hover {
+    font-size: calc(20px + 4.5vw);
+    color: rgb(255, 100, 4);
+}
+.icon {
+    float: right;
+    position: absolute;
+    width: 2.5vw;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    right: -4vw;
+    bottom: 0.7vw;
+}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 35px;
+    padding: 20px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    color: white;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+    color: red;
+    }
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+	color: red;
+}
