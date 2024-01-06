@@ -1,4 +1,4 @@
-[Amaterasu_Logo.png]
+![](Images/Amaterasu_Logo.png)
 
 ## About Amaterasu
 
